@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Footer from "./Footer";
+import NavBar from "./NavBar";
 
 function Book() {
   const [date, setDate] = useState("");
@@ -12,7 +14,9 @@ function Book() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-200">
+    <div className="">
+      <NavBar/>
+    <div className="m-4 flex flex-col items-center justify-center h-screen bg-gray-100 rounded">
       <h2 className="text-3xl font-bold text-gray-800 mb-6">Book a Class</h2>
       <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-lg">
         <div className="mb-4">
@@ -62,6 +66,8 @@ function Book() {
           Book Now
         </button>
       </form>
+    </div>
+    <Footer/>
     </div>
   );
 }

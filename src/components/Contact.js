@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Footer from "./Footer";
+import NavBar from "./NavBar";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -18,7 +20,8 @@ function Contact() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-gray-200 p-6 rounded-lg">
+    <form onSubmit={handleSubmit} className="bg-gray-100 p-6 rounded-lg m-4">
+      <NavBar/>
       <h2 className="text-2xl font-bold text-gray-800 mb-6">Contact Us</h2>
       <div className="mb-4">
         <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
@@ -64,6 +67,7 @@ function Contact() {
       >
         Send
       </button>
+      <Footer/>
     </form>
   );
 }

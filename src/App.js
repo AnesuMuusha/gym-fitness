@@ -2,15 +2,17 @@ import React from "react";
 import Book from "./components/Book";
 import Contact from "./components/Contact";
 import Explore from "./components/Explore";
-import GymHomepage from "./components/GymHomepage";
+import Home from "./components/Home";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 function App() {
   return (
     <div>
-      <GymHomepage/>
-      <Contact/>
+      <Home/>
       <Book/>
       <Explore/>
-      </div>
+      <Contact/>
+    </div>
   );
 }
 
