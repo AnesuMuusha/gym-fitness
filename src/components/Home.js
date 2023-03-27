@@ -7,10 +7,10 @@ function Home() {
   return (
     <>
     <NavBar/>
-      <div className="flex flex-col m-5 w-5/5">
-        <img src={gymImage} alt="Gym" className="" />
+      <div className="flex flex-col m-5 w-5/5 md:text-1xl md:flex md:flex-row lg:text-2xl xl:text-4xl">
+        <img src={gymImage} alt="Gym" className="md:m-4 md:w-1/2" />
         <div className="flex flex-col items-center">
-          <h1 className="font-serif text-bold font-bold text-lg  mt-2">Welcome to Fit Gym</h1>
+          <h1 className="font-serif text-bold font-bold text-lg  mt-2 md:text-3xl lg:text-4xl xl:text-6xl">Welcome to Fit Gym</h1>
           <p className="my-4 px-3 text-gray-800">
             We are dedicated to providing a
             world-class fitness experience for everyone, from beginners to

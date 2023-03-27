@@ -7,7 +7,7 @@ import PostedData from './PostedData.js';
 function Explore() {
   return (<>
   <NavBar/>
-    <div className='m-4'>
+    <div className='m-4 md:text-3xl'>
     {
                 posts.map(post => {
                     const { description, title, path} = post

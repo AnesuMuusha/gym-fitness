@@ -20,7 +20,8 @@ function Contact() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-gray-100 p-6 rounded-lg m-4">
+    // md:text-1xl md:flex md:flex-row lg:text-2xl xl:text-4xl
+    <form onSubmit={handleSubmit} className="bg-gray-100 p-6 rounded-lg m-4 md:text-3xl lg:text-4xl xl:text-6xl">
       <NavBar/>
       <h2 className="text-2xl font-bold text-gray-800 mb-6">Contact Us</h2>
       <div className="mb-4">

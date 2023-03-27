@@ -16,7 +16,7 @@ function Book() {
   return (
     <div className="">
       <NavBar/>
-    <div className="m-4 flex flex-col items-center justify-center h-screen bg-gray-100 rounded">
+    <div className="m-4 flex flex-col items-center justify-center h-screen bg-gray-100 rounded md:text-3xl lg:text-4xl xl:text-6xl">
       <h2 className="text-3xl font-bold text-gray-800 mb-6">Book a Class</h2>
       <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-lg">
         <div className="mb-4">
