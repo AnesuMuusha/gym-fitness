@@ -14,10 +14,14 @@ function Book() {
   };
 
   return (
-    <div className="">
+    <div className="bg-gray-100 " id="Book">
       <NavBar/>
-    <div className="m-4 flex flex-col items-center justify-center h-screen bg-gray-100 rounded md:text-3xl lg:text-4xl xl:text-6xl">
-      <h2 className="text-3xl font-bold text-gray-800 mb-6">Book a Class</h2>
+    <div className="m-4 p-1 md:flex items-center justify-center h-screen bg-gray-100 rounded md:text-1xl lg:text-2xl xl:text-4xl">
+     <div className="m-16">
+      <div className=" font-bold md:text-2xl lg:text-3xl xl:text-5xl text-gray-800 mb-6">Book a Class</div>
+      
+      </div>
+      <div>
       <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-lg">
         <div className="mb-4">
           <label htmlFor="date" className="block text-gray-700 font-bold mb-2">
@@ -66,6 +70,7 @@ function Book() {
           Book Now
         </button>
       </form>
+    </div>
     </div>
     <Footer/>
     </div>

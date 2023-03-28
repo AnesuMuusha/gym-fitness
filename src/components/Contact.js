@@ -9,7 +9,6 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // handle form submission here
     resetForm();
   };
 
@@ -20,10 +19,18 @@ function Contact() {
   };
 
   return (
-    // md:text-1xl md:flex md:flex-row lg:text-2xl xl:text-4xl
-    <form onSubmit={handleSubmit} className="bg-gray-100 p-6 rounded-lg m-4 md:text-3xl lg:text-4xl xl:text-6xl">
-      <NavBar/>
-      <h2 className="text-2xl font-bold text-gray-800 mb-6">Contact Us</h2>
+    <div className=" m-4 p-1 md:flex items-center justify-center h-screen bg-gray-100 rounded md:text-l lg:text-1xl xl:text-4xl">
+    <div className="">
+       <div className="mt-14">
+       <NavBar/>
+       </div>
+       <div className="md:flex m-8 ">
+        <div className="flex items-center mr-10">
+<h2 className="text-2xl font-bold text-gray-800 mb-6">Contact Us</h2>
+</div>
+
+       <div>
+    <form onSubmit={handleSubmit} id="Contact" className="bg-gray-100 p-6 rounded-lg ">
       <div className="mb-4">
         <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
           Name
@@ -70,6 +77,9 @@ function Contact() {
       </button>
       <Footer/>
     </form>
+    </div></div></div>
+
+    </div>
   );
 }
 
