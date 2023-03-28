@@ -1,10 +1,10 @@
 import imageAbs from "./images/abs.jpg";
 import imageBack from "./images/back.jpg";
-import imageChest from "./images/chest.jpeg";
+import imageChest from "./images/back.jpg";
 import imageShoulders from "./images/shoulders.jpg";
 import imageArms from "./images/arm.jpg";
 import imageLeg from "./images/leg.jpg";
-import imageGlutes from "./images/glutes.jpg"
+import imageGlutes from "./images/back.jpg"
 export const posts = [
     {
         title: "Chest",
@@ -15,7 +15,7 @@ export const posts = [
       {
         title: "Back",
         description:
-          "Deadlifts: Stand with a weighted barbell on the ground and lift it up to hip level. Rows: Stand with a weight in each hand and pull the weights up towards your chest while squeezing your shoulder blades together.",
+          "Dead lifts: Stand with a weighted barbell on the ground and lift it up to hip level. Rows: Stand with a weight in each hand and pull the weights up towards your chest while squeezing your shoulder blades together.",
           imagePath: {imageBack},
       },
       {
