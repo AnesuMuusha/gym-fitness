@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Footer from "./Footer";
-import NavBar from "./NavBar";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -9,7 +8,12 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    resetForm();
+    if (!name || !email || !message) {
+      alert("Please fill out all the fields.");
+      return;
+    }else{   
+      alert("Form successfully submitted");
+      resetForm();}
   };
 
   const resetForm = () => {
@@ -22,7 +26,6 @@ function Contact() {
     <div className=" m-4 p-1 md:flex items-center justify-center h-screen bg-gray-100 rounded md:text-l lg:text-1xl xl:text-4xl">
     <div className="">
        <div className="mt-14">
-       <NavBar/>
        </div>
        <div className="md:flex m-8 ">
         <div className="flex items-center mr-10">
