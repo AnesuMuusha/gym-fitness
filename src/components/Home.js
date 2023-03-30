@@ -1,12 +1,11 @@
 import React from "react";
-import gymImage from "./images/gym.jpg" ;
+import gymImage from "./images/home1.jpg" ;
 import Footer from "./Footer";
-import NavBar from "./NavBar";
 
 function Home() {
   return (
     <>
-    <NavBar/>
+  
       <div className="flex flex-col m-5 w-5/5 md:text-1xl md:flex md:flex-row lg:text-2xl xl:text-4xl" id="Home">
         <img src={gymImage} alt="Gym" className="md:m-4 md:w-1/2" />
         <div className="flex flex-col items-center">
