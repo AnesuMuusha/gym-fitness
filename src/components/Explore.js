@@ -3,16 +3,16 @@ import Footer from './Footer';
 import { posts } from './PostData';
 import PostedData from './PostedData.js';
 
-function Explore() {
+const Explore=()=> {
   return (<>
     <div className='m-4 md:text-3xl' id='Explore'>
     {
                 posts.map(post => {
-                    const { description, title, imagePath} = post
+                    const { description, title, image} = post
                     return <PostedData 
                                 description={description} 
                                 title={title} 
-                                path={imagePath} />
+                                image={image}/>
                     }
                 )
             }
