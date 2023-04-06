@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Footer from "./Footer";
 
-function Contact() {
+const Contact=()=> {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");

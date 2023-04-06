@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Footer from "./Footer";
 
-function Book() {
+const Book=()=>{
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [classType, setClassType] = useState("");
@@ -18,17 +18,6 @@ function Book() {
     }
     
   };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   if (!name || !email || !message) {
-  //     alert("Please fill out all the fields.");
-  //     return;
-  //   }else{   
-  //     alert("Form successfully submitted");
-  //     resetForm();}
-  // };
-
   const resetForm = () => {
     setDate("");
     setTime("");
